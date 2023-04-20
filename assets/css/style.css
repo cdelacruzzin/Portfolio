@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+}
+
+.my-links ul{
+    background-color: red;
+    padding-right: 40px;
+}
+.my-links li {
+    background-color: black;
+    
+}
+figure{
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    background: black;
+}
