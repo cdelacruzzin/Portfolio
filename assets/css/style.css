@@ -30,6 +30,11 @@ section{
     border: solid red 1px;
 
 }
-.works:hover{
+
+.works:focus {
     background-color: aqua;
+    height: 300px;
+}
+h3:focus{
+    color: red;
 }
