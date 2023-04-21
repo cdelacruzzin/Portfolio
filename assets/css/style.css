@@ -28,11 +28,17 @@ main {
     display: flex;
     flex-flow: column;
     
-    background-color: black;
-    gap: 2rem;
     border: 10px solid firebrick;
     
 
+}
+
+#about-me a, .works a{
+    display: flex;
+    flex-shrink: 1;
+    border: 10px solid blueviolet;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
