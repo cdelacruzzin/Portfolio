@@ -27,6 +27,15 @@ section {
     flex-direction: column;
     border: 10px solid black;
 }
+.border-text{
+    display: flex;
+    row-gap: 220px;
+    
+}
+.border-text span{
+    border: 2px solid blue;
+    
+}
 
 .works {
     height: 200px;
