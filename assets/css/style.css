@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    list-style:none;
+    margin: 0;
+    padding: 0;
 }
 
 .my-links{
@@ -27,19 +30,49 @@
 main {
     display: flex;
     flex-flow: column;
+    background-color: lightgreen;
     
     border: 10px solid firebrick;
     
 
 }
+#about-me{
+    line-height: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
 
-#about-me a, .works a{
+
+
+#about-me, .works a{
     display: flex;
     flex-shrink: 1;
     border: 10px solid blueviolet;
     justify-content: space-around;
     align-items: center;
 }
+.bio, .hidden {
+    background: palevioletred;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+    width: 70%;
+}
+
+.bio + p{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
 
 
 /* in this class, "Carlos Dela Cruz PROJECTS" will slide from right to left.
