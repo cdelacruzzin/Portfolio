@@ -41,6 +41,9 @@ the gap in between each span is 40px.
 When screen resolution decreases, the overflow will be hidden, and will not wrap to the next line.
 
  */
+
+
+
 .border-text {
     display: flex;
     gap: 40px;
@@ -61,7 +64,7 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
-    display: flex;
+    
 }
 /* 
 sets the dimensions to the same size as its parent so that
@@ -77,23 +80,20 @@ when the whole box is clicked, it will redirect to the link */
 }
 
 .work-figure{
-    height: 80%;
-    position: absolute;
-    top: 50%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-    width: 30%;
+    height: 70%;
+    transform: translate(-20%, 0%);
     display: flex;
+} 
+
+a aside{
+    color: red;
+    align-self: center;
 }
 
-.work-figure img{
-    width: 400px;
-}
 
-.work aside{
-    width: 46%;
 
-}
+
+
 
 
 
@@ -101,7 +101,7 @@ when the whole box is clicked, it will redirect to the link */
 
 
 @media screen and (min-width:500px) {
-    figure {
+    .hero {
         background: red;
     }
     
@@ -109,7 +109,7 @@ when the whole box is clicked, it will redirect to the link */
 
 @media screen and (min-width:900px) {
 
-    figure {
+    .hero {
         background: yellow;
     }
 }
