@@ -3,6 +3,7 @@
 .my-links ul{
     background-color: red;
     padding-right: 40px;
+    margin: 0;
 }
 .my-links li {
     background-color: black;
@@ -14,6 +15,21 @@ figure{
     margin: 0;
     background: blue;
 }
-section{
+main{
     display: flex;
+    flex-flow: column wrap;
+    
+}
+section{
+    
+    border: 10px solid black;
+}
+
+.works{
+    height: 200px;
+    border: solid red 1px;
+
+}
+.works:hover{
+    background-color: aqua;
 }
