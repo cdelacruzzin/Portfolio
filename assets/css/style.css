@@ -48,6 +48,13 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
 .works {
     height: 100px;
     border: solid red 1px;
+    display: flex;
+}
+.works a{
+    background-color: bisque;
+    width: 100%;
+    
+
 }
 
 
@@ -59,11 +66,15 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
 
 
 @media screen and (min-width:500px) {
-
+    figure {
+        background: red;
+    }
     
 }
 
 @media screen and (min-width:900px) {
 
-    
+    figure {
+        background: yellow;
+    }
 }
