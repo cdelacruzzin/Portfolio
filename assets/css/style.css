@@ -27,15 +27,22 @@ section {
     flex-direction: column;
     border: 10px solid black;
 }
-.border-text{
+
+/* in this class, "Carlos Dela Cruz PROJECTS" will slide from right to left.
+the gap in between each span is 40px.
+When screen resolution decreases, the overflow will be hidden, and will not wrap to the next line.
+
+ */
+.border-text {
     display: flex;
     gap: 40px;
     height: 50px;
     border: 2px solid blue;
     background-color: lightgray;
-    align-items: center;overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     white-space: nowrap;
-    
 }
 
 .works {
@@ -47,4 +54,21 @@ section {
 .works:focus {
     background-color: aqua;
     height: 300px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:500px) {
+
+    
+}
+
+@media screen and (min-width:900px) {
+
+    
 }
