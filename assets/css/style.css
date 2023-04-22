@@ -9,17 +9,17 @@
 .my-links{
     background-color: blueviolet;
     border: 5px solid green;
-    display: flex;
-    justify-content:flex-end;
-    padding-right: 10%;
-   
-
 }
+
+
 .my-links ul{
     display: flex;
     gap: 5rem;
-    width: 50%;
+    width: 100%;
     background-color: red;
+    justify-content: flex-end;
+    padding-right: 10%;
+    
 
 }
 .work-links, .contact-link  {
@@ -27,9 +27,12 @@
     border: 5px solid aquamarine;
     display: flex;
 }
+
 .my-links li{
     background-color: hotpink;
     border: 5px solid royalblue;
+    width: 8rem;
+    text-align: center;
 }
 
 
@@ -68,6 +71,19 @@ main {
     justify-content: space-around;
     align-items: center;
 }
+
+.works:hover h3{
+    font-size: 10em;
+}
+.works:hover img{
+    height: 400px;
+}
+.works:hover button{
+    display: none;
+}
+
+
+
 .bio, .hidden {
     background: palevioletred;
     display: flex;
