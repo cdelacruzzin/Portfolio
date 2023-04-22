@@ -5,20 +5,35 @@
     padding: 0;
 }
 
+
 .my-links{
-    height: 100px;
+    background-color: blueviolet;
+    border: 5px solid green;
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 10%;
+   
+
 }
-.my-links ul {
+.my-links ul{
+    display: flex;
+    gap: 5rem;
+    width: 50%;
     background-color: red;
-    padding-right: 40px;
-    margin: 0;
-    height: 100%;
-}
-
-.my-links li {
-    background-color: black;
 
 }
+.work-links, .contact-link  {
+    background-color: saddlebrown;
+    border: 5px solid aquamarine;
+    display: flex;
+}
+.my-links li{
+    background-color: hotpink;
+    border: 5px solid royalblue;
+}
+
+
+
 
 .hero {
     height: 300px;
@@ -41,7 +56,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 
@@ -60,10 +75,15 @@ main {
     flex-shrink: 1;
     align-items: center;
     width: 70%;
+    line-height: 2.5;
 }
 
-.bio + p{
-    width: 20%;
+.hidden{
+    display: flex;
+}
+.bio button:focus + .hidden{
+    display: flex;
+
 }
 
 
