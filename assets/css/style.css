@@ -1,6 +1,5 @@
-:root{
 
-}
+
 
 
 *{
@@ -69,26 +68,6 @@ main {
 
 
 
-#about-me, .works a{
-    display: flex;
-    flex-shrink: 1;
-    border: 10px solid blueviolet;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-
-.works:hover h3{
-    font-size: 10em;
-}
-.works:hover img{
-    height: 400px;
-}
-.works:hover button{
-    display: none;
-}
-
 
 
 .bio, .hidden {
@@ -108,25 +87,29 @@ main {
     display: flex;
 }
 
+#about-me, .works a{
+    display: flex;
+    flex-shrink: 1;
+    border: 10px solid blueviolet;
+    justify-content: space-around;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
+.works:hover h3{
+    font-size: 10em;
+}
+.works:hover img{
+    height: 400px;
+}
+.works:hover button{
+    display: none;
+}
 
 
 /* in this class, "Carlos Dela Cruz PROJECTS" will slide from right to left.
 the gap in between each span is 40px.
 When screen resolution decreases, the overflow will be hidden, and will not wrap to the next line.
 */
-
-
-
 
 .border-text {
     display: flex;
@@ -140,8 +123,6 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
     white-space: nowrap;
 }
 
-
-
 /* Adds an animation for the border-texts to slide from right to left infinitely */
 .border-text span{
     flex: 1;
@@ -153,7 +134,18 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
     to { transform: translateX(-100%); }
   }
 
+/* layout for frofile box. even spaces between resume and github */
+.profile-box{
+    height: 30em;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.profile-box > *{
+    text-align: center;
+}
 
 
 
