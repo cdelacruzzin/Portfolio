@@ -97,10 +97,12 @@ main {
 .hidden{
     display: flex;
 }
-.bio button:focus + .hidden{
+#about-me button:active + .hidden{
     display: flex;
-
 }
+
+
+
 
 
 
@@ -114,8 +116,11 @@ main {
 /* in this class, "Carlos Dela Cruz PROJECTS" will slide from right to left.
 the gap in between each span is 40px.
 When screen resolution decreases, the overflow will be hidden, and will not wrap to the next line.
+*/
 
- */
+
+
+
 .border-text {
     display: flex;
     gap: 2rem;
@@ -127,8 +132,16 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
     overflow: hidden;
 }
 
+.border-text span{
+    flex: 1;
+    animation: slide 20s infinite linear;
+}
 
 
+@keyframes slide {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+  }
 
 
 @media screen and (min-width:500px) {
