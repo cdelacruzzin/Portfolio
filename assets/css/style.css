@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-h2 {
+#about-me h2 {
     font-size: 6em;
 }
 
@@ -67,9 +67,9 @@ h1 {
     align-items: center;
     width: 100%;
     margin: 0;
-    background: blue;
+    background: yellow;
     text-align: center;
-    font-size: 15rem;
+    font-size: 7rem;
 }
 
 
@@ -113,7 +113,8 @@ main {
     width: 70%;
     line-height: 2.5;
 }
-.bio p{
+
+.bio p {
     font-size: 1.6rem;
 }
 
@@ -134,10 +135,10 @@ main {
 }
 
 #one img {
-    height: 400px;
+    height: 300px;
 }
 
- h3 {
+h3 {
     font-size: 3rem;
 }
 
@@ -208,7 +209,7 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
 
 .profile-box>* {
     text-align: center;
-    padding:2rem;
+    padding: 2rem;
     border: 5px solid;
 }
 
@@ -224,26 +225,153 @@ label {
 }
 
 
-#github:hover img{
+#github:hover img {
     height: 400px;
 }
-#resume:hover img{
+
+#resume:hover img {
     height: 400px;
 }
 
 
-@media screen and (min-width:500px) {
+
+
+@media screen and (max-width:900px) {
+
+
+
+
+    #about-me p {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        background: tan;
+        font-size: 5rem;
+    }
+
+    #about-me h2 {
+        font-size: 3.5rem;
+    }
+
+    img {
+        width: 50%
+    }
+
+    #one img {
+        height: 0%;
+        width: 60%;
+    }
+
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .works:hover h3 {
+        font-size: 3rem;
+    }
+
+
+    .works:hover h3::after {
+        font-size: 2rem;
+    }
+
+    .works:hover img {
+        height: 100%;
+    }
+
+
+    .profile-box {
+
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+
+    .profile-box>* {
+        border: none
+    }
+
+    #github:hover img {
+        height:fit-content;
+        width: 101%;
+    }
+
+    #resume:hover img {
+        height:fit-content;
+        width: 101%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+
+    .my-links {
+        gap: 1rem;
+    }
+
+    .my-links a {
+        width: 6rem;
+    }
+
+    #about-me p {
+        font-size: 0.8rem;
+    }
+
     h1 {
         background: red;
+        font-size: 2rem;
+    }
+
+    #about-me h2 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 50%
+    }
+
+    #one img {
+        height: 0%;
+        width: 60%;
     }
 
 
-
-}
-
-@media screen and (min-width:900px) {
-
-    h1 {
-        background: yellow;
+    h3 {
+        font-size: 2em;
     }
+
+    .works:hover h3 {
+        font-size: 2rem;
+    }
+
+
+    .works:hover h3::after {
+        font-size: 1rem;
+    }
+
+    .works:hover img {
+        height: 100%;
+    }
+
+
+    .profile-box {
+
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+
+    .profile-box>* {
+        border: none
+    }
+
+    #github:hover img {
+        height: 100%;
+    }
+
+    #resume:hover img {
+        height: 100%;
+    }
+
 }
