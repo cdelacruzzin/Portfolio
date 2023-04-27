@@ -5,13 +5,29 @@
     padding: 0;
 }
 
+h2 {
+    font-size: 6em;
+}
 
+#projects h2,
+#contact-me h2 {
+    border-bottom: 1rem solid magenta;
+    padding-left: 2em;
+    margin-top: 1em;
+}
+
+/* Sets the background color to blueviolet
+ adds a 5px solid green border to elements with the class my-links */
 .my-links {
     background-color: blueviolet;
     border: 5px solid green;
 }
 
-
+/* Changes the display property to flex and sets the gap between child elements to 5rem. 
+ background color to red, stretches the element to 100% of its container
+ aligns the child elements to the right
+  adds padding to the right side of the element.
+ */
 .my-links {
     display: flex;
     gap: 5rem;
@@ -19,10 +35,12 @@
     background-color: red;
     justify-content: flex-end;
     padding-right: 10%;
-
-
 }
 
+
+/* background color to saddlebrown
+ adds a 5px solid aquamarine border to elements 
+ Also sets the display property to flex. */
 .work-links,
 .contact-link {
     background-color: saddlebrown;
@@ -30,6 +48,10 @@
     display: flex;
 }
 
+/* background color to hotpink
+ adds a 5px solid royalblue border to a elements
+ Sets the width of the a elements to 8rem
+  centers the text within the elements. */
 .my-links a {
     background-color: hotpink;
     border: 5px solid royalblue;
@@ -38,15 +60,21 @@
 }
 
 
-
-
-.hero {
-    height: 300px;
+/* Centers the text within an H1 element both horizontally and vertically using Flexbox */
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0;
     background: blue;
+    text-align: center;
+    font-size: 15rem;
 }
 
+
+/* Arranges child elements in a column using Flexbox
+ applies a green background color with a 10px firebrick border. */
 main {
     display: flex;
     flex-flow: column;
@@ -100,8 +128,12 @@ main {
     height: 400px;
 }
 
+.works h3 {
+    font-size: 4rem;
+}
+
 .works:hover h3 {
-    font-size: 10em;
+    font-size: rem;
 }
 
 .works:hover h3::after {
@@ -176,7 +208,7 @@ label {
 }
 
 @media screen and (min-width:500px) {
-    .hero {
+    h1 {
         background: red;
     }
 
@@ -186,7 +218,7 @@ label {
 
 @media screen and (min-width:900px) {
 
-    .hero {
+    h1 {
         background: yellow;
     }
 }
