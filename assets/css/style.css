@@ -73,7 +73,7 @@ h1 {
 }
 
 
-/* Arranges child elements in a column using Flexbox
+/* Arrange child elements in a column using Flexbox
  applies a green background color with a 10px firebrick border. */
 main {
     display: flex;
@@ -85,6 +85,10 @@ main {
 
 }
 
+
+/* uses Flexbox to align elements vertically
+ centers child elements horizontally
+ and adds a 1rem gap. */
 #about-me {
     line-height: 3;
     display: flex;
@@ -96,7 +100,10 @@ main {
 
 
 
-
+/*  background to palevioletred
+  Flexbox to align elements vertically
+   allows element to shrink
+    centers child elements horizontally*/
 .bio {
     background: palevioletred;
     display: flex;
@@ -107,14 +114,11 @@ main {
     line-height: 2.5;
 }
 
-.hidden {
-    display: flex;
-}
-
-#about-me button:active+.hidden {
-    display: flex;
-}
-
+/* display to flex for #about-me and .works a.
+    Allows elements to shrink
+    10px solid blueviolet border
+    evenly spaces child elements horizontally
+    and centers them vertically. */
 #about-me,
 .works a {
     display: flex;
@@ -133,9 +137,13 @@ main {
 }
 
 .works:hover h3 {
-    font-size: rem;
+    font-size: 10rem;
 }
 
+/* Adds "View More" after h3 elements within .works when .works is hovered over.
+ Displays it as a block, adds a 10px margin at the top, 
+ sets font-size to 3rem, 
+ and centers the text horizontally. */
 .works:hover h3::after {
     content: "View More";
     display: block;
