@@ -113,6 +113,11 @@ main {
     width: 70%;
     line-height: 2.5;
 }
+.bio p{
+    font-size: 1.6rem;
+}
+
+
 
 /* display to flex for #about-me and .works a.
     Allows elements to shrink
@@ -132,7 +137,7 @@ main {
     height: 400px;
 }
 
-.works h3 {
+ h3 {
     font-size: 4rem;
 }
 
@@ -198,10 +203,13 @@ When screen resolution decreases, the overflow will be hidden, and will not wrap
     flex-shrink: 1;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 6rem;
 }
 
 .profile-box>* {
     text-align: center;
+    padding:2rem;
+    border: 5px solid;
 }
 
 form {
@@ -214,6 +222,15 @@ form {
 label {
     font-weight: bold;
 }
+
+
+#github:hover img{
+    height: 400px;
+}
+#resume:hover img{
+    height: 400px;
+}
+
 
 @media screen and (min-width:500px) {
     h1 {
