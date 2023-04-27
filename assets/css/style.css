@@ -235,12 +235,8 @@ label {
 
 
 
-
+/* Changed css to fit responsive display for tablet size */
 @media screen and (max-width:900px) {
-
-
-
-
     #about-me p {
         font-size: 0.8rem;
     }
@@ -304,6 +300,7 @@ label {
 }
 
 
+/* Changed css to fit responsive display for mobile size */
 @media screen and (max-width:500px) {
 
 
