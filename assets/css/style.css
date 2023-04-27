@@ -16,7 +16,7 @@
 }
 
 
-.my-links ul{
+.my-links{
     display: flex;
     gap: 5rem;
     width: 100%;
@@ -32,7 +32,7 @@
     display: flex;
 }
 
-.my-links li{
+.my-links a{
     background-color: hotpink;
     border: 5px solid royalblue;
     width: 8rem;
@@ -70,7 +70,7 @@ main {
 
 
 
-.bio, .hidden {
+.bio {
     background: palevioletred;
     display: flex;
     flex-direction: column;
@@ -95,15 +95,25 @@ main {
     align-items: center;
 }
 
+#one img{
+    height: 400px;
+}
+
 .works:hover h3{
     font-size: 10em;
 }
+.works:hover h3::after{
+   content: "View More";
+   display: block;
+   margin-top: 10px;
+   font-size:3rem ;
+   text-align: center;
+}
+
 .works:hover img{
-    height: 400px;
+    height: 300px;
 }
-.works:hover button{
-    display: none;
-}
+
 
 
 /* in this class, "Carlos Dela Cruz PROJECTS" will slide from right to left.

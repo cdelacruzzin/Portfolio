@@ -13,19 +13,17 @@
 <body>
     <header>
         <nav class="my-links">
-            <ul>
-                <div class="work-links">
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Github</li>
-                    <li>Resume</li>
-                </div>
-                <div class="contact-link">
-                    <li>Contact me</li>
-                </div>
+            <div class="work-links">
+                <a href="#about-me">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#profile">Contact Me</a>
+            </div>
+            <div class="contact-link">
+                <a href="#about-me">Contact Me</a>
+            </div>
 
 
-            </ul>
+
         </nav>
     </header>
     <figure class="hero"></figure>
@@ -39,9 +37,7 @@
                     Quisque sodales mollis velit non fringilla.
                     Vestibulum dapibus neque tellus.</p>
 
-            </div>
-            <button> View more</button>
-            <div class="hidden">
+            
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere vitae justo porttitor
                     consequat. Quisque sodales mollis velit non fringilla. Vestibulum dapibus neque tellus. Orci varius
                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed sapien id nibh
@@ -75,7 +71,7 @@
                                 <img src="assets/images/1.png">
                             </figure>
                             <h3 class="card__title">Fun stuff</h3>
-                            <button>open</button>
+                            
                         </a>
 
                     </div>
@@ -89,7 +85,7 @@
                                 <img src="assets/images/1.png">
                             </figure>
                             <h3 class="card__title">Fun stuff</h3>
-                            <button>open</button>
+                            
                         </a>
 
                     </div>
@@ -102,7 +98,7 @@
                                 <img src="assets/images/1.png">
                             </figure>
                             <h3 class="card__title">Fun stuff</h3>
-                            <button>open</button>
+                            
                         </a>
 
                     </div>
@@ -121,7 +117,7 @@
             </div>
 
 
-            <section class="profile">
+            <section id="Contact Me">
                 <h2>Profile</h2>
                 <div class="profile-box">
                     <div id="resume">
@@ -141,11 +137,23 @@
                         </h3>
                     </div>
                 </div>
-            </section>
+                <div class="contact-box">
+                    <h2>Contact Me</h2>
+                    <form action="mailto:youremail@example.com">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send</button>
+                      </form>
+                </div>
+
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
 
