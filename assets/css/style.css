@@ -138,11 +138,11 @@ main {
 }
 
  h3 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .works:hover h3 {
-    font-size: 10rem;
+    font-size: 7rem;
 }
 
 /* Adds "View More" after h3 elements within .works when .works is hovered over.
