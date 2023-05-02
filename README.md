@@ -17,7 +17,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 preview:
-![preview:](assets/images/preview-img.PNG)
+![preview:](assets/images/preview.PNG)
 
 ## Usage
 click the navigation buttons to redirect to the links.
